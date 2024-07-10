@@ -1,12 +1,10 @@
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useColorScheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { useState } from "react";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import SettingsBrightnessIcon from "@mui/icons-material/SettingsBrightness";
@@ -48,23 +46,23 @@ function ModeSelect() {
   );
 }
 
-function ModeToggle() {
-  const { mode, setMode } = useColorScheme();
-  // const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  // const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
+// function ModeToggle() {
+//   const { mode, setMode } = useColorScheme();
+//   // const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+//   // const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
 
-  // console.log("prefersDarkMode", prefersDarkMode);
-  // console.log("prefersLightMode", prefersLightMode);
-  return (
-    <Button
-      onClick={() => {
-        setMode(mode === "light" ? "dark" : "light");
-      }}
-    >
-      {mode === "light" ? "Turn dark" : "Turn light"}
-    </Button>
-  );
-}
+//   // console.log("prefersDarkMode", prefersDarkMode);
+//   // console.log("prefersLightMode", prefersLightMode);
+//   return (
+//     <Button
+//       onClick={() => {
+//         setMode(mode === "light" ? "dark" : "light");
+//       }}
+//     >
+//       {mode === "light" ? "Turn dark" : "Turn light"}
+//     </Button>
+//   );
+// }
 function App() {
   return (
     <>
