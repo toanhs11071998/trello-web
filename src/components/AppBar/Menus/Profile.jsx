@@ -31,7 +31,11 @@ function Profile() {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
         >
-          <Avatar sx={{ width: 30, height: 30 }} src="" alt="logo">
+          <Avatar
+            sx={{ width: 34, height: 34 }}
+            src="https://static.topcv.vn/user_avatars/qFHwBXZ38VEGGRyhgPBS_6671a4a82ebb7_av.jpg"
+            alt="logo"
+          >
             TT
           </Avatar>{" "}
         </IconButton>
